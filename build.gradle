@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'ddd'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.3.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.3.0")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.3.0")
+    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.3.0")
+}
+
+test {
+    useJUnitPlatform()
+}

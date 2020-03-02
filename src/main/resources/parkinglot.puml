@@ -1,0 +1,31 @@
+@startuml
+
+class ParkingLot <<Entity>> {
+  int id
+  int capacity
+
+  Receipt parkCar(Car car)
+  Car getCar(Receipt receipt)
+}
+class Car <<Value Object>> {
+  String plateNumber
+}
+class Receipt <<Value Object>> {
+}
+
+class ParkingBoy {
+  Receipt parkCar(Car car)
+  Car getCar(Receipt receipt)
+}
+
+ParkingLot *-- Receipt
+ParkingLot ..> Car
+
+Receipt -> Car
+
+ParkingBoy o-- ParkingLot
+ParkingBoy ..> Receipt
+ParkingBoy ..> Car
+ParkingBoy --> ParkingLot
+
+@enduml

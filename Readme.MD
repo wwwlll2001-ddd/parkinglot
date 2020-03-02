@@ -1,0 +1,8 @@
+# How To Run
+
+./gradlew clean test
+
+---
+
+# PlantUML
+![](http://www.plantuml.com/plantuml/png/dP313i8W44JlVCKUhKdz0i91uwrHeubtYgH1QqjWUsXC_zsbWXBZoGF9CZlpCg1QwJqSfBkPhgbw1Cwt7HeSXO070p0TWhdGK1cF_AYLDXO5kDVWeqD9AnM56DsZ1omnDz8jwD3U5RGAOwCngCaLGGMRc9gh10_dPzaE6lRrLIkCJKxeg2BOLgBU3VTQktScmNxa9XOzyOdhVfnfVxTasLyjopA1Sdcr4W72M8gNyPvrw2dwYUIRaFw29Zb0CgaaRiPu0W00)
